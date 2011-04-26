@@ -10,14 +10,18 @@
   <style type="text/css">
   @import url("http://www.w3.org/StyleSheets/TR/base.css");
   body {
-	  font-family: Arial, Helvetica, sans-serif;
-	  background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
   }
   h1, div.description, div.figure {
-	  text-align:center;
+    text-align:center;
   }
   pre {
-	  background-color: #FFFFE0;
+    background-color: #FFFFE0;
+  }
+  .highlight {
+    color:red;
+    font-weight:bold;
   }
   </style>
 </head>
@@ -97,7 +101,7 @@
         Exponent: 65537 (0x10001)
       X509v3 extensions:
         X509v3 Subject Alternative Name:
-          URI: <span style="color:red; font-weight:bold;">https://bob.net/id/bob#me</span></pre>
+          URI: <span class="highlight">https://bob.net/id/bob#me</span></pre>
   It contains Bob&apos;s WebID, shown in bold red above.</li>
     <li>Alice&apos;s server:<ol>
       <li>checks that
@@ -166,7 +170,7 @@
     attacks the biggest threat on the web, leading to a mistrust of new services. WebID
     uses TLS-client certificates and public key cryptography as shipped in current
     browsers in a way that enables the same certificate to be used across sites securely.
-    Furthermore with the HTML5 supported keygen element, creating such a certificate is
+    Furthermore with the HTML5 supported <code>keygen</code> element, creating such a certificate is
     as easy as submitting an HTML form.</p>
 
 
@@ -231,9 +235,9 @@
 
     <p>Not only does WebID work with the Web as it is
     today, but it will be strengthened with the rollout of critical infrastructure
-    elements such as DNSsec, which can be used as <a href=
+    elements such as DNSSEC, which can be used as <a href=
     "http://www.wired.com/techbiz/people/magazine/16-12/ff_kaminsky?currentPage=all">Dan Kaminsky</a>
-    explains in his <a href="http://dankaminsky.com/2010/12/13/dnssec-ch1/">DNSsec Diaries</a>
+    explains in his <a href="http://dankaminsky.com/2010/12/13/dnssec-ch1/">DNSSEC Diaries</a>
     to publish public keys of services, a work being developed formally
     by the <a href=
     "http://datatracker.ietf.org/wg/dane/charter/">
