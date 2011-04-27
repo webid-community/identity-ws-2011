@@ -206,7 +206,7 @@
 
 <p>These protocol simplifications create a cascade of additional benefits. WebID can be applied recursively, enabling the Relying Party (Alice above) to identify herself using WebID, making it easy to <a href="http://blogs.sun.com/bblfish/entry/sketch_of_a_restful_photo">build an authorization protocol</a>. WebId takes full advantage of the peer to peer nature of the Web. </p>
 
-    <h3>3.3 Transport Layer Security</h3>
+    <h3>3.3 Public Key Infrastructure</h3>
 
 
     <p>TLS-client certificates have been available in
@@ -216,16 +216,18 @@
     server-side https. Outside of very large and well-funded Defence related
     organisations, client-side certificates have thus had very poor adoption.</p>
 
-
-    <p>The missing link is the global naming system
-    that OpenID takes advantage of with URIs, and that allows one to potentially
+    <p>The missing link to wide adoption is the global naming system
+    that OpenID takes advantage of with URLs, and that allows one to potentially
     authenticate to all sites. What failed TLS was that X500 names were not Universal
     Identifiers, were not designed to form an interlinked web, and hence were not usable
-    to authenticate to sites without those first having a federated agreement. By
-    webifying TLS we enable global authentication and authorization through the creation
-    of a distributed linked web of trust, at a much finer level of granularity than has
-    been offered before.</p>
+    to authenticate to sites without those first having a federated agreement. One can easily
+    imagine how much resistance there would have been to global hypertext system  if organisations had 
+    to first make an agreement with every web site they wanted to visit, before their users 
+    were able to visit them. </a>
 
+    <p>Having solved the naming/identity problem using standard URLs, WebId can then use the network of relations between agents by using  the web of interlinked profiles and other resources (eg. academic publications, ...) to calculate trust in a dynamic manner. Trust can then be spread to a much large network of actors, each bringing a small piece of information to the whole allowing for greater resilience in the system.</p>
+
+    
     <h3>3.4 Future Proof Protocol</h3>
 
     <p>Not only does WebID work with the Web as it is
