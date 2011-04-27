@@ -1,11 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
     "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" version="XHTML+RDFa 1.0" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/" version="XHTML+RDFa 1.0" xml:lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta property="dc:subject" content="identity, WebID, authentication, Browser, REST, HTTPS, Public-key cryptography" />
-  <meta property="dc:creator" content="Dominik Tomaszuk" />
   <title>The WebID Protocol &amp; Browsers</title>
   <style type="text/css">
   @import url("http://www.w3.org/StyleSheets/TR/base.css");
@@ -24,6 +23,9 @@
     color:red;
     font-weight:bold;
   }
+  ul.authorship { list-style:none; }
+  ul.authorship li { display: inline; }
+  ul.authorship li:after { content: '; ' }
   </style>
 </head>
 
@@ -39,17 +41,22 @@
     W3C WebID Incubator Group</a></p>
 
 
-    <p>Authors: <a href="http://jeffsayre.com/" rel="dc:publisher">
-    Jeff Sayre</a> &amp; <a href="http://bblfish.net/" rel="dc:publisher">Henry Story</a>, WebID Incubator Chair</p>
+    <p>Authors: 
+    <ul class="authorship" rel="dc:creator">
+      <li typeof="foaf:Person"><a rel="foaf:homepage" href="http://jeffsayre.com/"  property="foaf:name">Jeff Sayre</a></li> 
+      <li about="http://bblfish.net/#hjs" typeof="foaf:Person"><a rel="foaf:homepage" href="http://bblfish.net/"  property="foaf:name">Henry Story</a>, WebID Incubator Chair</li>
+    </ul></p>
 
     <p>Reviewers: 
-    <a href="http://www.cs.kent.ac.uk/people/staff/dwc8/" rel="dc:contributor">David Chadwick</a>, University of Kent;
-    <a href="http://openspring.net/about" rel="dc:contributor">Stéphane Corlosquet</a>;
-    <a href="http://vsr.informatik.tu-chemnitz.de/people/gaedke/" rel="dc:contributor">Martin Gaedke</a>, Chemnitz University of Technology;
-    <a href="http://www.deri.ie/about/team/member/Alexandre_Passant/" rel="dc:contributor">Alexandre Passant</a>, Deri, Ireland;
-    <span property="dc:contributor">Andrei Sambra</span>; 
-    <a href="http://ii.uwb.edu.pl/~dtomaszuk/" rel="dc:contributor">Dominik Tomaszuk</a>, University of Bialystok, Institute of Computer Science;
-    <a href="http://portal.acm.org/citation.cfm?id=560938" rel="dc:contributor">Peter Williams</a></p>
+    <ul class="authorship" rel="dc:contributor"><li typeof="foaf:Person">
+    <a rel="foaf:workInfoHomepage" href="http://www.cs.kent.ac.uk/people/staff/dwc8/" property="foaf:name">David Chadwick</a>, University of Kent</li>
+    <li typeof="foaf:Person"><a rel="foaf:homepage" property="foaf:name" href="http://openspring.net/about">Stéphane Corlosquet</a></li>
+    <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://vsr.informatik.tu-chemnitz.de/people/gaedke/">Martin Gaedke</a>, Chemnitz University of Technology</li>
+    <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://www.deri.ie/about/team/member/Alexandre_Passant/">Alexandre Passant</a>, Deri, Ireland</li>
+    <li typeof="foaf:Person"><a rel="foaf:homepage" property="foaf:name" href="http://fcns.eu/">Andrei Sambra</a></li>
+    <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://ii.uwb.edu.pl/~dtomaszuk/">Dominik Tomaszuk</a>, University of Bialystok, Institute of Computer Science</li>
+    <li typeof="foaf:Person"><a rel="foaf:isPrimaryTopicOf" property="foaf:name" href="http://portal.acm.org/citation.cfm?id=560938">Peter Williams</a></li>
+    </ul></p>
     </div>
 
     <h2>1. Position Statement</h2>
