@@ -67,7 +67,7 @@
     therefore be conscious of the face he is presenting at any time. He should be able to
     change it easily: identity selection should be a one-click gesture,
     cryptographically-secure, and web site independent. It should put the user in control
-    of the information he share with each site. And it should be available
+    of the information he shares with each site. And it should be available
     now.</p>
 
 
@@ -87,10 +87,8 @@
 
     <h2>2. WebID Overview</h2>
 
-
-    <p>The WebID protocol is very simple and
-    efficient. It requires only one more HTTP connection than the original resource
-    requested, and the results of this connection can be cached.</p>
+    <p>To illustrate how WebID works, we will first look in detail at what happens on the wire when Bob connects for the first time to a protected resource on Alice's Web Server. This resource could simply be a login button, or it could be any of the resources published there. This should help show just how simple and efficient the protocol is: it requires only one more HTTP connection than the original resource
+    requested, and the results of this connection can be cached. </p>
 
     <ol>
     <li>Bob requests
@@ -118,7 +116,7 @@
       <li>extracts the
     URI from the Subject Alternative Name field of the certificate, which is known as
     Bob&apos;s WebID: a global identifier that refers to Bob via a document that describes
-    him, in a machine readable and W3C-standardised way.<div class="figure"><img width="708" height="544" src=
+    him, in a machine readable way using W3C standards.<div class="figure"><img width="708" height="544" src=
     "webid_images/WebIDSequence-friendly.jpg" alt="" /></div></li>
     </ol></li>
     <li>Alice's server
