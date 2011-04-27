@@ -47,15 +47,16 @@
       <li about="http://bblfish.net/#hjs" typeof="foaf:Person"><a rel="foaf:homepage" href="http://bblfish.net/"  property="foaf:name">Henry Story</a>, WebID Incubator Chair</li>
     </ul></p>
 
-    <p>Reviewers: 
+    <p>Contributors: 
     <ul class="authorship" rel="dc:contributor"><li typeof="foaf:Person">
     <a rel="foaf:workInfoHomepage" href="http://www.cs.kent.ac.uk/people/staff/dwc8/" property="foaf:name">David Chadwick</a>, University of Kent</li>
     <li typeof="foaf:Person"><a rel="foaf:homepage" property="foaf:name" href="http://openspring.net/about">Stéphane Corlosquet</a></li>
     <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://vsr.informatik.tu-chemnitz.de/people/gaedke/">Martin Gaedke</a>, Chemnitz University of Technology</li>
+    <li typeof="foaf:Person"><a rel="foaf:blog" property="foaf:name" href="http://www.openlinksw.com/blog/~kidehen/">Kingsley Idehen</a>, OpenLink Software</li>
     <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://www.deri.ie/about/team/member/Alexandre_Passant/">Alexandre Passant</a>, Deri, Ireland</li>
     <li typeof="foaf:Person"><a rel="foaf:homepage" property="foaf:name" href="http://fcns.eu/">Andrei Sambra</a></li>
     <li typeof="foaf:Person"><a rel="foaf:workInfoHomepage" property="foaf:name" href="http://ii.uwb.edu.pl/~dtomaszuk/">Dominik Tomaszuk</a>, University of Bialystok, Institute of Computer Science</li>
-    <li typeof="foaf:Person"><a rel="foaf:isPrimaryTopicOf" property="foaf:name" href="http://portal.acm.org/citation.cfm?id=560938">Peter Williams</a></li>
+    <li typeof="foaf:Person"><a rel="foaf:made" property="foaf:name" href="http://portal.acm.org/citation.cfm?id=560938">Peter Williams</a></li>
     </ul></p>
     </div>
 
@@ -180,13 +181,13 @@
     as easy as submitting an HTML form.</p>
 
 
-    <h3>3.2 Comparison to OpenID</h3>
+    <h3>3.2 OpenID</h3>
 
 
     <p><a href="http://openid.net/">OpenID</a>
     reduces the account multiplication issue by allowing users to login
-    to every site using the same global identifier. WebID was inspired by OpenID but
-    improves it in a number of meaningful ways:</p>
+    to every site using the same global identifier. This provides a base from which WebId can be deployed,
+    procuring the following extra advantages:</p>
 
     <ul>
     <li><strong>Protocol
@@ -200,7 +201,7 @@
     simplicity</strong>: OpenID requires the user to remember and type
     an OpenID URL. WebID hides this in the X509 certificate allowing the browser to offer
     select-and-click interaction. This is very helpful anywhere, but especially on
-    <a href="http://blogs.sun.com/bblfish/entry/one_click_global_sign_on"> handheld devices</a>.</li>
+    <a href="http://blogs.sun.com/bblfish/entry/one_click_global_sign_on">handheld devices</a>.</li>
     </ul>
 
     <p>These protocol simplifications create a cascade
@@ -209,13 +210,6 @@
     Web of declared relations between agents, opening the space for much more flexible
     trust policies and choices by service providers, in line with how business actually
     gets done.</p>
-
-
-    <p>Nevertheless OpenID and WebID can work
-    well. The OpenID profile can be the WebID
-    Profile. For devices that have not implemented client-side certificates properly yet,
-    OpenID can then be used for authentication.</p>
-
 
     <h3>3.3 Transport Layer Security</h3>
 
